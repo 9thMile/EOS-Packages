@@ -72,7 +72,7 @@ def burstupload( Station, sfile, filename):
             sendfile = Station.Remote_ID + sfile
             if len(filename) >0:
                 rp = "Login Attempt"
-                ##ftp = ftplib.FTP("eosweather.ca", "burst", "eosweather1!","", ftptimeout)
+                
                 ftp = ftplib.FTP(Station.Remote_Conn, Station.Burst_USN, Station.Burst_PWD,"", ftptimeout)
                 ftp.set_pasv(True)
                 rp = ftp.sendcmd("TYPE I")
