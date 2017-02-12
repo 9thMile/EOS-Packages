@@ -1,2 +1,2 @@
 # EOS-Packages
-Various packages
+Various packages that are used by EOS servers and applications.
